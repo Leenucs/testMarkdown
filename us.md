@@ -19,3 +19,4 @@ def s = "JavaScript syntax highlighting";
 ```
 
 ## Retour d'expérience
+ :metal: :metal: :metal:
