@@ -29,12 +29,12 @@ if (projet.isCompensa()){
 }
 ```
 
-Le but était de nettoyer cette complexité et de proposer un paramétrage facilité, avant l'arrivée d'autres assureurs.
+Le but était de nettoyer cette complexité et de proposer un paramétrage simplifié, avant l'arrivée d'autres assureurs.
 
 ## Solution
-L'idée est de créer une classe utilitaire permettant d'appeler des méthodes spécifiques retournant une valeur en fonction de l'assureur.
+L'idée est d'utiliser une classe utilitaire permettant d'appeler des méthodes statiques, spécifiques à chaque assureur.
 
-Il faut pour cela une classe abstraite permettant de définir des valeurs par défaut. Elle sera ensuite surchargée au besoin par les assureurs.
+Il faut également une classe abstraite permettant de définir des valeurs par défaut. Elle sera ensuite surchargée au besoin par les classes assureurs.
 
 ## Implémentation
 
@@ -84,7 +84,7 @@ def getCompteDestinataireMandat(Projet projet){
 ```
 
 ### AssureurOney, AssureurAxa, AssureurCompensa, 
-Les classes Assureur, c'est ici que l'on peut surcharger les méthodes et spécifier les particularités des assureurs.
+Les classes Assureur, c'est ici que l'on peut surcharger les méthodes et spécifier les particularités des assureurs si besoin.
 ```groovy
 def getCompteDestinataireMandat(Projet projet){
     projet.refExterneCompensa.numeroBancaire
@@ -99,7 +99,7 @@ L'exemple vu précédemment sur le contrôleur peut maintenant s'écrire :
 
 ## Retour d'expérience
 
-- [x] Logique conditionnelle déportée à un seul endroit.
+- [x] Spécificités des assureurs déportées à un seul endroit.
 
 - [x] Paramétrage facilité lors de l'arrivée d'un nouvel assureur.
 
