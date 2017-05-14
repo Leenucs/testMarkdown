@@ -96,7 +96,6 @@ L'exemple vu précédemment sur le contrôleur peut maintenant s'écrire :
 ```groovy
     data["compteDestinataire"] = AssureurHelper.getCompteDestinataireMandat(projet);
 ```
- :metal: :metal: :metal:
 
 ## Retour d'expérience
 
