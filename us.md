@@ -38,7 +38,7 @@ Il faut pour cela une classe abstraite permettant de définir des valeurs par d�
 
 ## Implémentation
 
-![Diagramme](/images/Diagramme.png)
+![Diagramme](/images/Diagramme.PNG)
 
 ### AssureurHelper:
 Cette classe contient les méthodes statiques permettant de récupérer une valeur paramétrée pour un assureur. On lui passe généralement l'objet "projet" permettant de déterminer dans quel contexte on se trouve.
